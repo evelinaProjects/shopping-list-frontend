@@ -1,0 +1,13 @@
+.shopping-list-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(198, 238, 223, 0.986);
+    padding: 0 2rem 1rem 2rem;
+  }
+
+  .shopping-list-body.dark {
+    background: rgba(48, 71, 64, 0.473);
+  }
+
+  

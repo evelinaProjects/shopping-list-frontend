@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+.header-container {
+  justify-content: space-between;
+  align-items: flex-start;
+  background: rgba(151, 240, 209, 0.938);
+  display: flex;
+  flex-direction: column;
+}
+.header-container.dark {
+    background: rgba(44, 53, 50, 0.74);
+}
+.header-container .toggle {
+  align-self: flex-end;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0. 0 0;
+}
+
+.shopping-list-header  {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+  align-self: center;
+  padding: 0 2rem 0 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.shopping-list-header.dark {
+  color: rgba(247, 250, 224, 0.89);
+}

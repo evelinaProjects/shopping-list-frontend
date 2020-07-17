@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+.item {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  background: rgba(186, 245, 224, 0.897);
+}
+
+.item.dark {
+  background: rgba(44, 53, 50, 0.308);
+}
+
+.item .detail {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.item .detail.dark {
+  color: rgba(247, 250, 224, 0.89);
+}
+
+.item .button:hover + .detail {
+  text-decoration: line-through double red;
+
+}

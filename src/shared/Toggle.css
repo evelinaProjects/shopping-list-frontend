@@ -1,0 +1,56 @@
+.switch {
+  position: relative;
+  display: block;
+  width: 4rem;
+  height: 2rem;
+  margin: 0.5rem;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(199, 245, 247, 0.767);
+  transition: 0.5s;
+  border: 0.05rem solid rgba(145, 218, 240, 0.945);
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  bottom: 14px;
+  top: 8px;
+  background: rgba(221, 162, 51, 0.733);
+  transition: 0.5s;
+}
+
+.switch input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .slider {
+  background: rgb(2, 33, 63);
+}
+
+input[type="checkbox"]:checked + .slider::before {
+  transform: translateX(2.7rem) translateY(-0.5rem) rotateZ(-45deg) ;
+  border-bottom-left-radius: 0.01rem;
+  border-top-left-radius: 0.1rem;
+  width: 20%;
+  height: 80%;
+  background: rgba(241, 241, 165, 0.911);
+}
+
+.slider.round {
+  border-radius: 5rem;
+}
+
+.slider.round::before {
+  transform: translateX(0.2rem) translateY(-0.25rem);
+  width: 35%;
+  height: 70%;
+  border-radius: 2.5rem;
+}

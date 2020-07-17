@@ -1,0 +1,21 @@
+.submit ,
+.regular-button{
+  font-size: 1rem;
+  padding: 0.6rem;
+  background: transparent;
+  border: 0.05rem solid black;
+}
+
+.submit.dark,
+.regular-button.dark {
+  color: rgba(247, 250, 224, 0.89);
+  border: 0.05rem solid rgba(247, 250, 224, 0.89);
+}
+
+.submit:hover {
+  background: rgba(186, 245, 224, 0.897);
+}
+
+.submit.dark:hover {
+  background: rgba(44, 53, 50, 0.74);
+}
