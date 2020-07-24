@@ -1,15 +1,13 @@
-import React, { useContext } from 'react';
-import { ItemContext } from '../contexts/ItemContext';
+import React from 'react';
 
 import Button from '../shared/Button';
 
 import './ItemdDtails.css';
 
-const ItemdDtails = ({ item, mode }) => {
-    const { dispatch } = useContext(ItemContext);
+const ItemdDtails = ({removeItem, item, mode}) => {
 
     const removeitemHandler = () => {
-        dispatch({ type: 'REMOVE_ITEM', item })
+        removeItem(item);
     }
     return (
         <li className={`item ${mode==='dark' && 'dark'}`} >
