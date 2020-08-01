@@ -1,0 +1,26 @@
+.image-input-container{
+  height: 10rem;
+  width: 15rem;
+  margin-bottom: 3rem;
+}
+  .image-preview img{
+    height: 12rem;
+    width: 12rem;
+    margin-left: 1rem;
+    border-radius: 6rem;
+    object-fit: fill;
+  }
+
+  .image-preview button{
+    position: relative;
+    bottom: 4rem;
+    left: 5.4rem;
+    border: none;
+    color:rgba(14, 14, 17, 0.425); 
+
+  }
+
+  .image-preview button:hover {
+    color:rgb(14, 14, 17);
+  } 
+ 

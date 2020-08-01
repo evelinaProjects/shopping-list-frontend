@@ -1,8 +1,8 @@
 import React, { createContext, useReducer, useEffect } from 'react';
+import Axios from 'axios';
 
 import { ItemReducer } from '../reducers/ItemReducer';
 import { HttpReducer } from '../reducers/HttpReducer';
-import Axios from 'axios';
 
 export const ItemContext = createContext();
 
@@ -11,7 +11,7 @@ const ItemContextProvider = (props) => {
     const [items, dispatch] = useReducer(ItemReducer, []);
     const [httpState, dispatchHTTPState] = useReducer(HttpReducer, { loading: false, errorMsg: null })
 
-   
+
     useEffect(() => {
 
         dispatchHTTPState({ type: 'START_LOADING' })
@@ -21,7 +21,6 @@ const ItemContextProvider = (props) => {
         }
         )).catch(error => {
             dispatchHTTPState({ type: 'ERROR', msg: 'an error...' })
-
         })
 
     }, [])

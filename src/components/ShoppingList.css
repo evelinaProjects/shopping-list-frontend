@@ -7,16 +7,7 @@
 .shopping-list ul {
   list-style: none;
 }
-/* .shopping-list ul li {
-  width: 17rem;
-}
 
- .list-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} 
- */
 .empty-list {
   padding-top: 3rem;
   text-align: center;

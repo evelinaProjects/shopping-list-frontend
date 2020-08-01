@@ -7,6 +7,7 @@ import Body from './components/Body';
 import './App.css'
 import ItemContextProvider from './contexts/ItemContext';
 import Button from './shared/Button';
+import UserContextProvider from './contexts/UserContext';
 
  const App = () => {
   const [isLogin, setIsLogin] = useState(false)
@@ -15,11 +16,12 @@ import Button from './shared/Button';
       <div className="shopping-list-container">
         <ShoppingListHeader />
         <ItemContextProvider>
-          <Body isLogin={isLogin}/>
-          
+          <UserContextProvider>
+          <Body isLogin={isLogin} setIsLogin={setIsLogin}/>   
+          </UserContextProvider>
         </ItemContextProvider>
       </div>
-      <Button value={`${isLogin? 'logout': 'login'}`} handler={()=>{setIsLogin(!isLogin)}}/>
+      {isLogin ? <Button value='logout' handler={()=>{setIsLogin(!isLogin)}}/> : '' }
 
     </DarkModeContextProvider>
 
